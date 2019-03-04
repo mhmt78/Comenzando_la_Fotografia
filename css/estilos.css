@@ -1,0 +1,298 @@
+@font-face {
+	font-family: dancing script;
+	src: url(/fuentes/dancing script.otf);
+}
+
+@keyframes slidein {
+	0% {
+		margin-top: 150%;
+	}
+    60% {
+		margin-top: -5%;
+	}
+    100% {
+		margin-top: 0%;
+	}
+}	
+	
+* {
+	margin:0;
+}
+
+body {
+	background-color: #02010a;
+}
+
+header h1 { 	
+	color: #ffffff;
+	font-family: Dancing Script; 
+	font-size: 2.8em;
+	text-align: center;
+	text-shadow: 2px 2px #02010a;
+}   
+
+header {
+	animation-duration: 1.5s;
+		-webkit-animation-duration: 1.5s;
+		-moz-animation-duration: 1.5s;
+    animation-name: slidein;
+		-webkit-animation-name: slidein;
+		-moz-animation-name: slidein;
+	padding: 1vh 1vw;
+	margin-bottom: 0;
+	border-radius: 10px 10px 0 0;
+		-webkit-border-radius: 10px 10px 0 0;
+		-moz-border-radius: 10px 10px 0 0;
+	background-color: #5b7989;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+#Enlaces a {
+	color: #ffffff;
+	font-family: Dancing Script; 
+	font-size: 1.8em;
+	float: left;
+	padding: 15px 10px;
+}
+
+figcaption {
+	font-family: dancing script;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+a.sinlinea:link { 
+	text-decoration:none; 
+} 
+
+a.color:link { 
+	color: #02010a; 
+}
+ 
+footer {
+	padding: 1vh 1vw;
+	border-radius: 0 0 10px 10px;
+		-webkit-border-radius: 0 0 10px 10px;
+		-moz-border-radius: 0 0 10px 10px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-flow: row;
+}
+#uno, #cuatro {
+	width: 20%;
+
+}
+
+#dos, #tres {
+	width: 30%;
+}
+
+footer h1 { 	
+	color: #02010a;
+	font-family: Dancing Script; 
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+} 
+
+footer ul {
+	font-family: Dancing Script;
+	font-weight: bold;
+	list-style-type: none;
+	padding: 10px;
+	margin: 0;
+}
+
+footer li {
+	text-align: justify
+}
+
+footer a {
+	font-weight: bold;
+}
+
+a.color1:link { 
+	color: #02010a; 
+	text-decoration:none; 
+} 
+
+.fotografia {
+	margin: 0 auto;
+    width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.fotografia div {
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	padding: 15px;
+}
+.fotografia div img {
+	width: 100%;
+	margin: 20px auto;
+	display: flex;
+	box-shadow: 2px 2px #02010a;
+		-webkit-box-shadow: 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px #02010a;
+	align-items: center;
+	justify-content: center;
+}
+
+#paisaje {
+	display: flex;
+	flex-direction: column;
+	background-color: #d5c75f;
+}
+
+.paisajes {
+	display: flex;
+	flex-direction: row;
+}
+
+.paisajes img{
+	box-shadow: 2px 2px #02010a;
+		-webkit-box-shadow: 2px 2px #02010a;
+		-moz-box-shadow: 2px 2px #02010a;
+	border: 1px solid;
+	width: 200px;
+}
+
+.paisajes div {
+	text-align: center;
+	padding: 10px;
+	margin: 1.5px;
+	width: 50%;
+}
+
+#foto1 {
+	background-color: #82c3a6;
+	width: 100%;
+	
+}
+
+#foto2, #foto3 {
+	background-color: #d5c75f;
+	width: 50%;
+	border: 1px;
+}
+
+#fotos2 img { 
+	transition-property: border;
+		-webkit-transition-property: border;
+		-moz-transition-property: border;
+}
+
+#fotos2 img:hover {
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 5px 5px #82c3a6;
+		-webkit-box-shadow: 2px 2px 5px 5px #82c3a6;
+		-moz-box-shadow: 2px 2px 5px 5px #82c3a6;
+}
+
+#fotos3 img { 
+	transition-property: border;
+		-webkit-transition-property: border;
+		-moz-transition-property: border;
+}
+
+#fotos3 img:hover {
+	box-shadow: 2px 2px 5px 5px #82c3a6;
+		-webkit-box-shadow: 2px 2px 5px 5px #82c3a6;
+		-moz-box-shadow: 2px 2px 5px 5px #82c3a6;
+	transform: translate(20px, -5px);
+		-webkit-transform: translate(20px, -5px);
+		-moz-transform: translate(20px, -5px);
+}
+
+#imagen1 img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6 img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen3 img{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+#contenido {
+	width: 900px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 900px){
+	#contenido {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 640px){
+	#contenido	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#contenido {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	#foto1, #foto2,	#foto3 {
+		width: 100%;
+	}
+	
+	header {
+		width:100%;
+		flex-flow: row wrap;
+	}
+	
+	footer {
+		flex-flow: row wrap;
+	}
+	
+	footer h1 { 	
+		text-align: left;
+		margin: 0 0 0 20px;
+	}
+
+	footer ul{
+		text-align: left;
+		margin: 0 0 0 20px;
+	}
+	
+	#uno, #dos, #tres, #cuatro {
+		width:100%
+	}
+	
+	#Enlaces a {
+		padding: 0px 20px;
+  	}
+	
+	.paisajes {
+		display: inline-block;
+	}
+	
+	.paisajes div {
+		width: 100%;
+		padding: 0px;
+	}
+	.paisajes img{
+		width: 300px;
+	}	
+}
+
+
+
